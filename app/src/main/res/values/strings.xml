@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Hiragana Katakana App</string>
+
+    <!-- Navigation -->
+    <string name="title_home">Home</string>
+    <string name="title_learn">Learn</string>
+    <string name="title_quiz">Quiz</string>
+    <string name="title_progress">Progress</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Home Screen -->
+    <string name="welcome_back">Welcome back!</string>
+    <string name="motivation_default">Ready to continue your Japanese journey?</string>
+    <string name="day_streak">Day Streak</string>
+    <string name="study_time">Study Time</string>
+    <string name="continue_study">Continue Study</string>
+    <string name="quick_quiz">Quick Quiz</string>
+
+    <!-- Learn Screen -->
+    <string name="type_romaji">Type the romaji</string>
+    <string name="hint">Hint</string>
+    <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
+    <string name="correct">Correct! ✓</string>
+    <string name="incorrect">Incorrect. The answer is: %s</string>
+
+    <!-- Quiz Screen -->
+    <string name="question_counter">Question %1$d of %2$d</string>
+    <string name="quiz_question">What is the romaji for this character?</string>
+    <string name="quiz_completed">Quiz Completed!</string>
+    <string name="your_score">Your Score: %1$d/%2$d</string>
+    <string name="accuracy">Accuracy: %.1f%%</string>
+    <string name="try_again">Try Again</string>
+    <string name="back_to_home">Back to Home</string>
+
+    <!-- Settings -->
+    <string name="study_reminders">Study Reminders</string>
+    <string name="reminder_time">Reminder Time</string>
+    <string name="sound_effects">Sound Effects</string>
+    <string name="vibration">Vibration</string>
+    <string name="quiz_length">Quiz Length</string>
+    <string name="show_hints">Show Hints</string>
+    <string name="reset_progress">Reset Progress</string>
+
+    <!-- Notifications -->
+    <string name="study_reminder_title">Time to Study! 📚</string>
+    <string name="study_reminder_text">Ready to continue your Japanese learning journey?</string>
+    <string name="streak_motivation">Keep going! You\'re on a %d day streak 🔥</string>
+
+    <!-- Errors -->
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_sync_failed">Sync failed: %s</string>
+    <string name="error_no_questions">No questions available</string>
+    <string name="please_enter_answer">Please enter an answer</string>
+
+    <!-- Progress -->
+    <string name="characters_learned">Characters Learned</string>
+    <string name="total_study_time">Total Study Time</string>
+    <string name="average_accuracy">Average Accuracy</string>
+    <string name="current_streak">Current Streak</string>
+    <string name="best_streak">Best Streak</string>
+
+</resources>

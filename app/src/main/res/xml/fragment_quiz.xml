@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Quiz Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/question_counter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Question 1 of 10"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30s"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:background="@drawable/timer_background"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/quiz_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="24dp"
+        android:max="10"
+        android:progress="1"
+        android:progressTint="@color/primary_color" />
+
+    <!-- Character Display -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="32dp">
+
+            <TextView
+                android:id="@+id/quiz_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="あ"
+                android:textSize="120sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:textColor="@color/primary_color"
+                tools:text="あ" />
+
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is the romaji for this character?"
+                android:textSize="18sp"
+                android:layout_above="@id/quiz_character"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Answer Options -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/option_a"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="a"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/quiz_option_background"
+            android:layout_marginBottom="12dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            tools:text="a" />
+
+        <Button
+            android:id="@+id/option_b"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="i"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/quiz_option_background"
+            android:layout_marginBottom="12dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            tools:text="i" />
+
+        <Button
+            android:id="@+id/option_c"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="u"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/quiz_option_background"
+            android:layout_marginBottom="12dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            tools:text="u" />
+
+        <Button
+            android:id="@+id/option_d"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="e"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/quiz_option_background"
+            android:gravity="start|center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            tools:text="e" />
+
+    </LinearLayout>
+
+</LinearLayout>
